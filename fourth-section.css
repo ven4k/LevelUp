@@ -1,0 +1,36 @@
+/* Четвертая секция */
+.doctor-review{
+    margin-top: 200px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.doctor-review__product{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
+}
+.doctor-review__characteristic{
+    margin-top: 25px;
+    width: 600px;
+}
+.doctor-review__description{
+    margin-top: 25px;
+    margin-bottom: 100px;
+    height: 150px;
+    width: auto;
+    border: 2px solid green;
+}
+.doctor-review__description ol{
+    display: flex;
+    justify-content: space-between;
+}
+.doctor-review__description li{
+    margin: 10px;
+    width: 400px;
+}
+.doctor-review__description button{
+    width: 350px;
+    font-size: 20px;
+}
+.doctor-review__button{
+    text-align: center;
+}

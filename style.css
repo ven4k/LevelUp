@@ -1,0 +1,95 @@
+@import url('second-section.css');
+@import url('third-section.css');
+@import url('fourth-section.css');
+@import url('fifth-section.css');
+
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background: rgb(230,231,255);
+    background: radial-gradient(circle, rgba(230,231,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+header {
+    position: relative;
+    z-index: 10;
+}
+button{
+    padding: 5px;
+    border-radius: 3px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+button:hover{
+    cursor: pointer;
+    color:white;
+    background: red;
+}
+
+header h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    color: #f7f7f7;
+    letter-spacing: 10px;
+    text-shadow: 1px 0 1px #f7f7f7,
+        0 1px 1px #f7f7f7,
+        -1px 0 1px #f7f7f7,
+        0 -1px 1px #f7f7f7;
+    font-size: 84px;
+    text-align: center;
+    margin: -15px;
+}
+
+/* Первая секция */
+.video {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
+    top: 0;
+    width: 1200px;
+}
+
+.promo {
+    position: relative;
+    height: 500px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    z-index: 10;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.promo__product-image {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.promo__parameters {
+    margin-top: 50px;
+    width: 500px;
+    color: #f7d651;
+    font-weight: 600;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+}
+
+.promo__parameters h3 {
+    margin-left: 35px;
+}
+
+.promo__parameters li {
+    margin-top: 12px;
+}
+
+.promo__parameters button {
+    width: 200px;
+    margin: 10px 0 0 35px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+}

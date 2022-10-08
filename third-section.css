@@ -1,0 +1,140 @@
+/* Третья Секция */
+
+.reviews {
+    height: auto;
+    margin-top: 200px;
+}
+
+.reviews__slides-item {
+    display: flex;
+    margin-left: 5px;
+}
+
+.reviews__slides-item p {
+    margin: 30px;
+}
+
+#slider {
+    position: relative;
+    margin: 0 auto;
+}
+
+#slides .reviews__slides-item {
+    width: 20%;
+    float: left;
+}
+
+#slides .reviews__slides-block {
+    display: flex;
+    width: 500%;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.reviews__slides-block img {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#desktop:checked~#slider {
+    max-width: 960px;
+}
+
+
+#switch1:checked~#controls label:nth-child(3),
+#switch2:checked~#controls label:nth-child(1),
+#switch3:checked~#controls label:nth-child(2) {
+    background: url('./images/png/prev.png') no-repeat;
+    float: left;
+    margin: 165px 0 0 -84px;
+    display: block;
+    height: 68px;
+    width: 68px;
+}
+
+
+#switch1:checked~#controls label:nth-child(2),
+#switch2:checked~#controls label:nth-child(3),
+#switch3:checked~#controls label:nth-child(1) {
+    background: url('./images/png/next.png') no-repeat;
+    float: right;
+    margin: 165px -84px 0 0;
+    display: block;
+    height: 68px;
+    width: 68px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.reviews input {
+    display: none;
+}
+
+
+#switch1:checked~#slides .reviews__slides-block {
+    margin-left: 0;
+}
+
+#switch2:checked~#slides .reviews__slides-block {
+    margin-left: -100%;
+}
+
+#switch3:checked~#slides .reviews__slides-block {
+    margin-left: -200%;
+}
+
+
+#controls {
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 10px;
+}
+
+#controls-active label {
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+}
+
+#controls-active {
+    margin: 23% 0 0;
+    text-align: center;
+}
+
+#controls-active label:hover {
+    background: #76c8ff;
+    border-color: #777 !important;
+}
+
+#switch1:checked~#controls-active label:nth-child(1),
+#switch2:checked~#controls-active label:nth-child(2),
+#switch3:checked~#controls-active label:nth-child(3) {
+    background: #18a3dd;
+    border-color: #18a3dd !important;
+}
+
+#slides .reviews__slides-block {
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover {
+    opacity: 0.6;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+}
+.reviews__button button{
+    margin-left: 135px;
+    width: 125px;
+    font-size: 14px;
+}

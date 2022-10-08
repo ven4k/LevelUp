@@ -1,0 +1,127 @@
+
+/*Вторая секция*/
+.product-comoposition {
+    display: flex;
+    margin-top: 50px;
+    height: 600px;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+}
+
+
+.product-comoposition__first-post {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-comoposition__first-post img {
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.product-comoposition__second-post {
+    width: 300px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-comoposition__second-post img {
+    height: 250px;
+}
+
+.product-comoposition__second-post button {
+    width: 150px;
+    margin-top: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+
+.product-comoposition__third-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.product-comoposition__third-post img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.product-comoposition__third-post__first-block {
+    border: 2px solid red;
+    display: flex;
+}
+
+.product-comoposition___item {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.product-comoposition___item h5 {
+    margin-left: 10px;
+
+}
+
+.product-comoposition__line-1,
+.product-comoposition__line-2,
+.product-comoposition__line-3,
+.product-comoposition__line-4,
+.product-comoposition__line-5,
+.product-comoposition__line-6 {
+    width: 150px;
+    height: 1px;
+    border-bottom: 2px solid black;
+    position: absolute;
+}
+
+.product-comoposition__line-1,
+.product-comoposition__line-2,
+.product-comoposition__line-3 {
+    left: 310px;
+}
+
+.product-comoposition__line-4,
+.product-comoposition__line-5,
+.product-comoposition__line-6 {
+    right: 310px;
+}
+
+.product-comoposition__line-1 {
+    transform: rotate(21deg);
+    top: 170px;
+}
+
+.product-comoposition__line-2 {
+    top: 350px;
+}
+
+.product-comoposition__line-3 {
+    transform: rotate(-16deg);
+    top: 535px;
+}
+
+.product-comoposition__line-4 {
+    transform: rotate(-21deg);
+    top: 170px;
+}
+
+.product-comoposition__line-5 {
+    top: 350px;
+}
+
+.product-comoposition__line-6 {
+    transform: rotate(18deg);
+    top: 530px;
+}

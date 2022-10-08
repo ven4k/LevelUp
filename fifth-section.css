@@ -1,0 +1,132 @@
+/*Пятая секция */
+.order {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.order__name {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 10px;
+}
+
+.order__timer {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 8px;
+}
+
+.order__product img {
+    width: 200px;
+}
+
+.order__line {
+    position: relative;
+    height: 1px;
+    width: 50px;
+    border-bottom: 4px solid red;
+    transform: rotate(-45deg);
+    top: -34px;
+
+}
+
+.order__part {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.order__cost {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.order__cost-first {
+    font-size: 20px;
+    ;
+}
+
+.order__cost-second {
+    position: absolute;
+    margin-top: 60px;
+    color: red;
+    font-size: 28px;
+    animation-name: order__cost-second;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.order__cost-second:hover {
+    animation: none;
+}
+
+.order__form {
+    margin-top: 100px;
+}
+
+.order__form input {
+    border-radius: 3px;
+    padding: 5px;
+    width: 450px;
+    margin: 10px;
+}
+
+.order__form p {
+    position: absolute;
+    margin-top: -4px;
+    right: 150px;
+    opacity: 1;
+    font-size: 12px;
+    color: red;
+    visibility: hidden;
+}
+
+
+.order__form button {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 75px;
+    font-size: 20px;
+}
+
+@keyframes order__cost-second {
+    0% {
+        font-size: 21px;
+    }
+
+    15% {
+        font-size: 21px;
+    }
+
+    30% {
+        font-size: 22px
+    }
+
+    45% {
+        font-size: 23px;
+    }
+
+    60% {
+        font-size: 24px;
+    }
+
+    75% {
+        font-size: 23px;
+    }
+
+    90% {
+        font-size: 22px;
+    }
+
+    100% {
+        font-size: 21px;
+    }
+}
