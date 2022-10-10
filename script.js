@@ -32,3 +32,28 @@ const handleChange = (e) => {
     const value = e.value;
     e.value = value.replace(/\D/g, '');
 }
+let phoneInput = document.querySelector('.phone-input');
+let phone = document.getElementById('phone');
+phone.addEventListener('focus', ()=>{
+    phoneInput.style.visibility = 'visible'
+})
+phone.addEventListener('blur', ()=>{
+    phoneInput.style.visibility = 'hidden'
+})
+
+let firstnameInput = document.querySelector('.firstname-input');
+let firstname = document.getElementById('firstname');
+firstname.addEventListener('focus', ()=>{
+    firstnameInput.style.visibility = 'visible'
+})
+firstname.addEventListener('blur', ()=>{
+    firstnameInput.style.visibility = 'hidden'
+})
+let lastnameInput = document.querySelector('.lastname-input');
+let lastname = document.getElementById('lastname');
+lastname.addEventListener('focus', ()=>{
+    lastnameInput.style.visibility = 'visible'
+})
+lastname.addEventListener('blur', ()=>{
+    lastnameInput.style.visibility = 'hidden'
+})
