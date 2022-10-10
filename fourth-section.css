@@ -1,6 +1,6 @@
 /* Четвертая секция */
 .doctor-review{
-    margin-top: 200px;
+    margin-top: 12.5rem;
     font-family: 'Barlow Condensed', sans-serif;
 }
 .doctor-review__product{
@@ -9,12 +9,12 @@
     border: 2px solid red;
 }
 .doctor-review__characteristic{
-    margin-top: 25px;
+    margin-top: 1.563rem;
     width: 600px;
 }
 .doctor-review__description{
-    margin-top: 25px;
-    margin-bottom: 100px;
+    margin-top: 1.563rem;
+    margin-bottom: 6.25rem;
     height: 150px;
     width: auto;
     border: 2px solid green;
@@ -24,13 +24,58 @@
     justify-content: space-between;
 }
 .doctor-review__description li{
-    margin: 10px;
+    margin: 0.625rem;
     width: 400px;
 }
 .doctor-review__description button{
     width: 350px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .doctor-review__button{
     text-align: center;
+}
+
+@media screen and (min-width: 280px) and (max-width: 500px ){
+
+.doctor-review{
+    margin-top: 12.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.doctor-review__product{
+    width: 600px;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
+}
+.doctor-review__product img{
+    margin-top: 5rem;
+    width: 250px;
+}
+.doctor-review__characteristic{
+    margin-top: 1.563rem;
+    width: 600px;
+}
+.doctor-review__description{
+    margin: 1.563rem 0 6.25rem 2rem;
+    height: 220px;
+    width: 600px;
+    border: 2px solid green;
+}
+.doctor-review__description ol{
+    display: flex;
+    justify-content: space-between;
+}
+.doctor-review__description li{
+    margin: 0.625rem;
+    width: 400px;
+}
+.doctor-review__description button{
+    width: 350px;
+    font-size: 1.25rem;
+}
+.doctor-review__button{
+    text-align: center;
+}
+
 }

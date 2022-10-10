@@ -1,23 +1,23 @@
 /*Пятая секция */
 .order {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
     position: relative;
 }
 
 .order__name {
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: 'Saira Condensed', sans-serif;
-    letter-spacing: 10px;
+    letter-spacing: 0.625rem;
 }
 
 .order__timer {
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 600;
     text-align: center;
-    font-size: 32px;
-    letter-spacing: 8px;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
 }
 
 .order__product img {
@@ -30,12 +30,12 @@
     width: 50px;
     border-bottom: 4px solid red;
     transform: rotate(-45deg);
-    top: -34px;
+    top: -2.125rem;
 
 }
 
 .order__part {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     display: flex;
     justify-content: space-around;
 }
@@ -44,20 +44,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .order__cost-first {
-    font-size: 20px;
-    ;
+    font-size: 1.25rem;
 }
 
 .order__cost-second {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 3.75rem;
     color: red;
-    font-size: 28px;
+    font-size: 1.75rem;
     animation-name: order__cost-second;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -69,64 +68,218 @@
 }
 
 .order__form {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .order__form input {
     border-radius: 3px;
-    padding: 5px;
+    padding: 0.313rem;
     width: 450px;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .order__form p {
     position: absolute;
-    margin-top: -4px;
-    right: 150px;
+    margin-top: -0.25rem;
+    right: 9.375rem;
     opacity: 1;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: red;
     visibility: hidden;
 }
 
 
 .order__form button {
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 0.313rem;
+    margin-left: 0.625rem;
     width: 75px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 @keyframes order__cost-second {
     0% {
-        font-size: 21px;
+        font-size: 1.25rem;
     }
 
-    15% {
-        font-size: 21px;
+    10% {
+        font-size: 1.313rem;
+    }
+
+    20% {
+        font-size: 1.375rem
     }
 
     30% {
-        font-size: 22px
+        font-size: 1.438rem;
     }
 
-    45% {
-        font-size: 23px;
+    40% {
+        font-size: 1.5rem;
+    }
+
+    50% {
+        font-size: 1.563rem;
     }
 
     60% {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
-
-    75% {
-        font-size: 23px;
+    70% {
+        font-size: 1.438rem;
     }
-
+    80% {
+        font-size: 1.375rem;
+    }
     90% {
-        font-size: 22px;
+        font-size: 1.313rem;
     }
-
     100% {
-        font-size: 21px;
+        font-size: 1.25rem;
+    }
+}    
+
+@media screen and (min-width: 280px) and (max-width: 500px ){
+    .order {
+        margin-top: 12.5rem;
+        margin-bottom: 12.5rem;
+        position: relative;
+    }
+    
+    .order__name {
+        margin-left: 10rem;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Saira Condensed', sans-serif;
+        letter-spacing: 0.625rem;
+    }
+    
+    .order__timer {
+        margin-left: 10rem;
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .order__product img {
+        margin-left: 10rem;
+        width: 150px;
+    }
+    
+    .order__line {
+        position: relative;
+        height: 1px;
+        width: 50px;
+        border-bottom: 4px solid red;
+        transform: rotate(-45deg);
+        top: -2.125rem;
+    
+    }
+    
+    .order__part {
+        margin-top: 3.125rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .order__cost {
+        margin-left: 10rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .order__cost-first {
+        font-size: 1.25rem;
+    }
+    
+    .order__cost-second {
+        position: absolute;
+        margin-top: 3.75rem;
+        color: red;
+        font-size: 1.75rem;
+        animation-name: order__cost-second;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear
+    }
+    
+    .order__cost-second:hover {
+        animation: none;
+    }
+    
+    .order__form {
+        margin-top: 1.25rem;
+        margin-left: 2.5rem;
+    }
+    
+    .order__form input {
+        border-radius: 3px;
+        padding: 0.313rem;
+        width: 450px;
+        margin: 0.625rem;
+    }
+    
+    .order__form p {
+        position: absolute;
+        margin-top: -0.25rem;
+        right: 9.375rem;
+        opacity: 1;
+        font-size: 0.75rem;
+        color: red;
+        visibility: hidden;
+    }
+    
+    
+    .order__form button {
+        margin-top: 0.313rem;
+        margin-left: 0.625rem;
+        width: 75px;
+        font-size: 1.25rem;
+    }
+    
+    @keyframes order__cost-second {
+        0% {
+            font-size: 1.25rem;
+        }
+    
+        10% {
+            font-size: 1.313rem;
+        }
+    
+        20% {
+            font-size: 1.375rem
+        }
+    
+        30% {
+            font-size: 1.438rem;
+        }
+    
+        40% {
+            font-size: 1.5rem;
+        }
+    
+        50% {
+            font-size: 1.563rem;
+        }
+    
+        60% {
+            font-size: 1.5rem;
+        }
+        70% {
+            font-size: 1.438rem;
+        }
+        80% {
+            font-size: 1.375rem;
+        }
+        90% {
+            font-size: 1.313rem;
+        }
+        100% {
+            font-size: 1.25rem;
+        }
     }
 }
